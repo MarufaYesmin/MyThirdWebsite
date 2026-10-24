@@ -1,0 +1,695 @@
+
+/* =========================
+   1. Basic Styles
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #172033;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================
+   2. Navbar Section
+========================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 10%;
+    background-color: white;
+
+}
+
+/* Logo */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #172033;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #ff2870;
+}
+
+/* Navigation Links */
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    list-style: none;
+}
+
+.nav-link a {
+    display: inline-block;
+
+    text-decoration: none;
+    color: #172033;
+    font-size: 14px;
+
+    transition: color 0.3s ease;
+}
+
+.nav-link a:hover,
+.nav-link a.active {
+    color: #ff2870;
+}
+
+.nav-link a.active {
+    border-bottom: 2px solid #ff2870;
+    padding-bottom: 5px;
+}
+
+
+/* =========================
+   3. Hero and About Layout
+========================= */
+
+.hero,
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    padding: 50px 10%;
+    min-height: 500px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    scroll-margin-top: 70px;
+}
+
+/* Space below fixed Navbar */
+.hero {
+    padding-top: 100px;
+
+    background-image: url("image/sixth1.png");
+}
+
+
+/* =========================
+   4. About Background
+========================= */
+
+.about {
+    background-image: url("image/sixth3.png");
+}
+
+
+/* =========================
+   5. Hero and About Text
+========================= */
+
+.hero-text,
+.about-text {
+    width: 50%;
+}
+
+.intro,
+.section-label {
+    color: #ff2870;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+/* Hero Name */
+.hero-text h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    color: #172033;
+
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 23px;
+    color: #172033;
+
+    margin-bottom: 20px;
+}
+
+/* About Heading */
+.about-text h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    color: #172033;
+
+    margin-bottom: 20px;
+}
+
+/* Paragraphs */
+.description,
+.about-description {
+    color: #657086;
+    font-size: 15px;
+    line-height: 1.8;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   6. Buttons
+========================= */
+
+.hero-button,
+.about-button,
+.contact-button a {
+    display: inline-block;
+
+    padding: 12px 28px;
+
+    background-color: #ff2870;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.hero-button:hover,
+.about-button:hover,
+.contact-button a:hover {
+    background-color: #e91e63;
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   7. Hero and About Images
+========================= */
+
+.hero-image,
+.about-image {
+    width: 45%;
+    text-align: center;
+}
+
+.hero-image img,
+.about-image img {
+    display: block;
+
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+
+    margin: 0 auto;
+}
+
+
+/* =========================
+   8. Projects Section
+========================= */
+
+.projects {
+    padding: 60px 8%;
+    background-color: #ffffff;
+    text-align: center;
+
+    scroll-margin-top: 70px;
+}
+
+.projects .section-label {
+    margin-bottom: 12px;
+}
+
+.projects-title {
+    font-size: 36px;
+    line-height: 1.2;
+    color: #172033;
+
+    margin-bottom: 35px;
+}
+
+/* Project Cards Layout */
+.project-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.project-card {
+    flex: 1;
+    min-width: 0;
+    text-align: left;
+}
+
+/* Project Images */
+.project-card img {
+    display: block;
+
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(23, 32, 51, 0.08);
+
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.project-card img:hover {
+    transform: translateY(-4px);
+}
+
+.project-card h3 {
+    font-size: 17px;
+    line-height: 1.4;
+    color: #172033;
+
+    margin-bottom: 8px;
+}
+
+.project-card p {
+    font-size: 14px;
+    color: #657086;
+}
+
+
+/* =========================
+   9. Testimonials Section
+========================= */
+
+.testimonials {
+    padding: 50px 10%;
+    text-align: center;
+
+    background-image: url("image/sixth5.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    scroll-margin-top: 70px;
+}
+
+.testimonials .section-label {
+    margin-bottom: 10px;
+}
+
+.testimonials > h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    color: #172033;
+
+    margin-bottom: 30px;
+}
+
+/* Review Card */
+.testimonial-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0 auto;
+    padding: 25px 35px;
+
+    background-color: rgba(255, 255, 255, 0.92);
+    border-radius: 12px;
+
+    box-shadow: 0 5px 25px rgba(23, 32, 51, 0.06);
+    text-align: left;
+}
+
+/* Client Image */
+.client-image {
+    flex-shrink: 0;
+}
+
+.client-image img {
+    display: block;
+
+    width: 85px;
+    height: 85px;
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+/* Review Content */
+.client-review {
+    flex: 1;
+    min-width: 0;
+}
+
+.review-text {
+    color: #657086;
+    font-size: 14px;
+    line-height: 1.7;
+
+    margin-bottom: 12px;
+}
+
+.client-review h3 {
+    color: #172033;
+    font-size: 16px;
+
+    margin-bottom: 3px;
+}
+
+.client-role {
+    color: #888;
+    font-size: 13px;
+}
+
+/* Slider Dots */
+.testimonial-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+.testimonial-dots span {
+    display: block;
+
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+
+    background-color: #d3d5dc;
+}
+
+.testimonial-dots .active-dot {
+    background-color: #ff2870;
+}
+
+
+/* =========================
+   10. Contact Section
+========================= */
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    padding: 50px 10%;
+    background-color: #f0f7ff;
+
+    scroll-margin-top: 70px;
+}
+
+.contact-text {
+    width: 65%;
+}
+
+.contact-text .section-label {
+    margin-bottom: 12px;
+}
+
+.contact-text h2 {
+    font-size: 32px;
+    line-height: 1.2;
+    color: #172033;
+
+    margin-bottom: 15px;
+}
+
+.contact-text > p:last-child {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #657086;
+}
+
+.contact-button {
+    flex-shrink: 0;
+}
+
+.contact-button a {
+    padding: 15px 30px;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   11. Footer Section
+========================= */
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 25px 10%;
+
+    background-color: #172033;
+    color: white;
+}
+
+.footer p {
+    font-size: 13px;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff2870;
+}
+
+
+/* =========================
+   12. Tablet Responsive
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .nav-link {
+        gap: 15px;
+    }
+
+    .hero,
+    .about {
+        padding-left: 6%;
+        padding-right: 6%;
+        gap: 25px;
+    }
+
+    .hero-text h1 {
+        font-size: 34px;
+    }
+
+    .about-text h2,
+    .contact-text h2 {
+        font-size: 28px;
+    }
+
+    .project-container {
+        gap: 15px;
+    }
+
+    .project-card img {
+        height: 150px;
+    }
+
+    .contact,
+    .footer {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+}
+
+
+/* =========================
+   13. Mobile Responsive
+========================= */
+
+@media (max-width: 650px) {
+
+    /* Navbar */
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+
+        padding: 12px 4%;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .nav-link {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+    }
+
+    .nav-link a {
+        font-size: 12px;
+    }
+
+    .nav-link a.active {
+        padding-bottom: 3px;
+    }
+
+    html {
+        scroll-padding-top: 100px;
+    }
+
+    /* Hero and About */
+    .hero,
+    .about {
+        flex-direction: column;
+        text-align: center;
+
+        gap: 25px;
+        padding: 140px 7% 40px;
+    }
+
+    .about {
+        padding-top: 45px;
+    }
+
+    .hero-text,
+    .about-text,
+    .hero-image,
+    .about-image {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 34px;
+    }
+
+    .hero-text h2 {
+        font-size: 21px;
+    }
+
+    .about-text h2 {
+        font-size: 29px;
+    }
+
+    .hero-image img,
+    .about-image img {
+        max-width: 300px;
+    }
+
+    /* Projects */
+    .projects {
+        padding: 45px 7%;
+    }
+
+    .projects-title {
+        font-size: 30px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .project-card {
+        width: 100%;
+    }
+
+    .project-card img {
+        height: auto;
+        max-height: 250px;
+    }
+
+    /* Testimonials */
+    .testimonials {
+        padding: 45px 7%;
+    }
+
+    .testimonials > h2 {
+        font-size: 28px;
+    }
+
+    .testimonial-card {
+        flex-direction: column;
+        text-align: center;
+
+        gap: 15px;
+        padding: 25px 20px;
+    }
+
+    .client-image img {
+        width: 75px;
+        height: 75px;
+    }
+
+    /* Contact */
+    .contact {
+        flex-direction: column;
+        align-items: flex-start;
+
+        padding: 40px 7%;
+        gap: 25px;
+    }
+
+    .contact-text {
+        width: 100%;
+    }
+
+    .contact-text h2 {
+        font-size: 28px;
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        text-align: center;
+
+        padding: 25px 7%;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
